@@ -21,8 +21,8 @@
             <version>5.4.2</version>
             <scope>test</scope>
         </dependency>
-    </dependencies>
 
+    </dependencies>
     <build>
         <plugins>
             <plugin>
