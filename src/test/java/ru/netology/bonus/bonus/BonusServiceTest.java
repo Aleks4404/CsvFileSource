@@ -7,14 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BonusServiceTest {
     @ParameterizedTest
-    @CsvSource(
-            value={
-                    "'registered user, bonus under limit',100060,true,30",
-                    "'registered user, bonus over limit',100000060,true,500",
-                    "'notRegistered user, bonus under limit',100060,false,10",
-                    "'notRegistered user, bonus over limit',1000000060,false,500"
-            }
-    )
+    @CsvSource(resources = "/data.csv")
      void shouldCalculate(String test, long amount, boolean registered, long expected) {
 
         ru.netology.bonus.BonusService service = new ru.netology.bonus.BonusService();
