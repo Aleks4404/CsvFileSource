@@ -1,4 +1,4 @@
-id,amount,registered user, bonus under limit
+id,amount,registered user, bonus
 1,100060,true,30
 2,100000060,true,500
 3,100060,false,10

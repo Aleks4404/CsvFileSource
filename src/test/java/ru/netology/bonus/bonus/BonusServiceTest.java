@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BonusServiceTest {
     @ParameterizedTest
-    @CsvSource(resources = "/data.csv")
+    @CsvSource( "/data.csv")
      void shouldCalculate(String test, long amount, boolean registered, long expected) {
 
         ru.netology.bonus.BonusService service = new ru.netology.bonus.BonusService();
